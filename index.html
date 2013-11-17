@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>Images with different dpi settings</title>
+  </head>
+  <body>
+    <h1>dpi settings don't matter on the screen</h1>
+    <p>There are two png images on this page. They both show a black circle, are both 30x30 px in resolution and they are both 347 bytes in file size. The first one however has the dot density set to 300 dpi and the second one has it set to 10 dpi. There is no difference visible when they are embedded in a web page and viewed on a screen. The actual size of the images on your screen depends on the <a href="https://en.wikipedia.org/wiki/List_of_displays_by_pixel_density">pixel density of your screen</a>. The pixel density is probably 72ppi or more.<p>
+    <p style="font-size:30px; line-height:1em"><span><a href="30px_300dpi.png">30px_300dpi.png</a>:</span> <img src="30px_300dpi.png" style="vertical-align: bottom" /></p>
+    <p style="font-size:30px; line-height:1em"><span><a href="30px_10dpi.png">30px_10dpi.png</a>:</span> <img src="30px_10dpi.png" style="vertical-align: bottom" /></p>
+    <p>When you are printing these images with an application capable to detect the dpi setting of an image (e.g. GIMP) they get printed differently.</p>
+    <p>The image with the dot density of 300dpi gets printed 0,1in in size (30/300). And the image with 10dpi gets printed 3in in size (=30/10).</p>
+    <p>One inch is 2.54 cm.</p>
+  </body>
+</html>
